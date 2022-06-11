@@ -1,0 +1,13 @@
+.trending-show {
+  height: 100%;
+}
+@media screen and (min-width: 578px) {
+  .pe-lg-4-5 {
+    padding-right: 1rem !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .pe-lg-4-5 {
+    padding-right: 2rem !important;
+  }
+}

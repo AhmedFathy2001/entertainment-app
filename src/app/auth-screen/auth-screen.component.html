@@ -1,0 +1,33 @@
+<div class="container w-100 px-xl-5 px-md-4">
+    <div class="row justify-content-center align-items-center">
+        <div class="auth-row">
+            <div class="col-12 text-center mb-5 w-100 mx-auto">
+                <img src="assets/logo.svg" alt="logo" draggable="false">
+            </div>
+            <div
+                class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4 p-4-5 d-flex justify-content-center flex-column auth-card mx-auto">
+                <h2 class="mb-3 heading_L">{{ getAuthMode() == 'login'?'Login': getAuthMode() =='reset'?'Reset Password':'Sign Up' }}
+                </h2>
+                <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)">
+                    <input *ngIf="getAuthMode() == 'register'" class="input_style mb-2" ngModel type="text"
+                        name="firstName" id="firstName" required minlength="3" placeholder="First Name">
+                    <input *ngIf="getAuthMode() == 'register'" class="input_style mb-2" ngModel type="text"
+                        name="lastName" id="lastName" required minlength="3" placeholder="Last Name">
+                    <input class="input_style mb-2" ngModel type="email" name="email" id="email" required email
+                        placeholder="Email Address">
+                    <input *ngIf="getAuthMode() !='reset'" class="input_style mb-3" ngModel type="password"
+                        name="password" id="password" required placeholder="Password" minlength="8">
+                    <input class="input_style mb-3" ngModel type="password" name="confirmPassword" id="confirmPassword"
+                        *ngIf="getAuthMode() == 'register'" required placeholder="Confirm Password">
+                    <button type="submit" class="button_style mb-4" [disabled]="!authForm.valid">{{ authBtnText
+                        }}</button>
+
+                    <p class="text-end cursor-pointer" *ngIf="getAuthMode() == 'login'" (click)="onSwitchToReset()">Forgot password?
+                    </p>
+                    <p class="mx-auto text-white auth_text cursor-pointer">{{ authSwitchText }} <a
+                            class="auth_redirection_link" (click)="onSwitchMode()">{{ authSwitchActionText }}</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

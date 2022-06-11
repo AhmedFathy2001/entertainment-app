@@ -1,0 +1,7 @@
+<h2 class="mb-4 heading_L">Search results for '{{ searchQuery }}'</h2>
+<div class="row m-0">
+    <div class="col-sm-6 col-lg-4 col-xl-3 mb-3" *ngFor="let item of search">
+        <app-show-template [show]="item" *ngIf="item != null">
+        </app-show-template>
+    </div>
+</div>

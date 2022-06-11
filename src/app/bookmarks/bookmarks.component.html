@@ -1,0 +1,16 @@
+<h2 class="mb-4 heading_L">Bookmarked Movies</h2>
+<div class="row w-100 m-0">
+    <div class="col-sm-6 col-lg-4 col-xl-3 mb-3" [ngStyle]="{'display':movie.isBookmarked?'block':'none'}"
+        *ngFor="let movie of movies">
+        <app-show-template [show]="movie">
+        </app-show-template>
+    </div>
+</div>
+<h2 class="mb-4 heading_L">Bookmarked TV Series</h2>
+<div class="row w-100 m-0">
+    <div class="col-sm-6 col-lg-4 col-xl-3 mb-3" [ngStyle]="{'display':series.isBookmarked?'block':'none'}"
+        *ngFor="let series of series">
+        <app-show-template [show]="series">
+        </app-show-template>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+
+  @media screen and (max-width: 426px) {
+    .heading_L {
+      font-size: 1.25rem !important;
+    }
+  }
+  .heading_L {
+    padding-left: 12px;
+  }
+  

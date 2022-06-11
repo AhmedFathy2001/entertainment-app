@@ -1,0 +1,49 @@
+<div class="row w-100 m-0 pe-4">
+    <h2 class="heading_L mb-4">My account</h2>
+    <h6 class="primary-color mb-3">Profile info</h6>
+    <!-- <div class="col-12 col-xl-1 d-xl-flex justify-content-center align-items-center mb-3"><img
+            style="width: 80px; height: 80px;" src="./assets/image-avatar.png" alt="Profile Picture">
+    </div> -->
+    <div class="col-xl-11 d-flex flex-wrap mb-3 pe-0">
+        <div class="form-group me-4 mb-3" style="width:calc(50% - 12px)">
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName" value="Ahmed" [(ngModel)]="firstName"
+                class="input_style ps-0" placeholder="First Name">
+        </div>
+        <div class="form-group" style="width:calc(50% - 12px)">
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName" value="Fathy" [(ngModel)]="lastName"
+                class="input_style ps-0" placeholder="Last Name">
+        </div>
+        <div class="form-group" style="width:100%">
+            <label for="myAccountEmail">Email Address</label>
+            <input type="email" name="email" id="myAccountEmail" value="Ahmedfathy075@gmail.com" [(ngModel)]="email"
+                class="input_style ps-0" placeholder="Email">
+        </div>
+    </div>
+    <div class="col-xl-11 text-end pe-0">
+        <button class="btn button_style" (click)="onUserDataSave()">Save Changes</button>
+    </div>
+    <h6 class="mb-5 primary-color">Password settings</h6>
+    <div class="col-xl-11 d-flex mb-3 pe-0 flex-column password-form">
+        <div class="form-group me-4">
+            <label for="myAccountPassword">Current Password</label>
+            <input type="text" name="password" id="myAccountPassword" [(ngModel)]="password" class="input_style ps-0">
+        </div>
+        <div class="form-group me-4">
+            <label for="newPassword">New Password</label>
+            <input type="text" name="newPassword" id="newPassword" [(ngModel)]="newPassword" class="input_style ps-0">
+        </div>
+        <div class="form-group">
+            <label for="confirmNewPassword">Confirm Password</label>
+            <input type="text" name="confirmNewPassword" id="confirmNewPassword" [(ngModel)]="newPasswordConfirm"
+                class="input_style ps-0">
+        </div>
+
+    </div>
+    <div class="d-flex justify-content-between col-xl-11 pe-0">
+        <button class="btn button_style" style="padding: 10px 29px;" (click)="onSignOut()">Sign Out</button>
+        <button class="btn button_style" (click)="onNewPasswordChange()">Save Changes</button>
+    </div>
+
+</div>

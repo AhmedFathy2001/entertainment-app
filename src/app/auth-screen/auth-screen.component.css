@@ -1,0 +1,32 @@
+.row {
+  height: 100vh;
+}
+.auth-row {
+  padding: 2rem 0;
+}
+
+.auth-card {
+  background-color: #161d2f;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.invalid {
+  border-bottom: 1px solid #fc4747;
+}
+.auth_text {
+  font-weight: 300;
+  width: fit-content;
+}
+
+.auth_redirection_link {
+  color: #fc4747;
+  text-decoration: none;
+  padding-left: 5px;
+}
+.auth_redirection_link:hover {
+  color: #fc4747;
+}

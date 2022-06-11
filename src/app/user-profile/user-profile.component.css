@@ -1,0 +1,26 @@
+.primary-color {
+  color: #fc4747;
+  opacity: 0.9;
+}
+.input_style {
+  word-wrap: break-word;
+}
+.button_style {
+  width: fit-content;
+  margin-bottom: 0.75rem;
+}
+label {
+  opacity: 0.7;
+}
+@media screen and (min-width: 575.5px) {
+  .password-form {
+    flex-direction: row !important;
+  }
+  .password-form .form-group {
+    width: calc(33% - 12px);
+  }
+}
+.password-form .form-group {
+  width: 100%;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,13 @@
+<!-- remove hover from mobile, fix responsive bugs in recommendations and make recommendations 
+    a generic compenent for tv/movies+recommendations -->
+<h2 class="mb-4 heading_L">Trending</h2>
+<div class="row w-100 m-0 mb-4 scroll-container" [ngStyle]="{cursor:dragging?'grabbing':'grab'}">
+    <drag-scroll [scroll-x-wheel-enabled]="true" (dragStart)="dragging=true" (onmousedown)="dragging=true"
+        (onmouseup)="dragging=false" (dragEnd)="dragging=false">
+        <div class="col-10 col-md-8 col-lg-7 col-xl-5 pe-2 pe-lg-4-5 me-0" drag-scroll-item
+            *ngFor="let trending of trendingShows">
+            <app-trending-show [trending]="trending">
+            </app-trending-show>
+        </div>
+    </drag-scroll>
+</div>

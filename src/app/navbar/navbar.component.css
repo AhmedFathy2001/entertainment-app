@@ -1,0 +1,72 @@
+.nav-card {
+  position: relative;
+  z-index: 2;
+  background-color: #161d2f;
+  width: 100%;
+  margin: 0;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.avatar {
+  width: 30px;
+  height: 30px;
+}
+.nav-icon {
+  width: 16px;
+  height: 16px;
+  fill: #5a698f;
+  transition: 0.1s all;
+  -webkit-transition: 0.1s all;
+  -moz-transition: 0.1s all;
+  -ms-transition: 0.1s all;
+  -o-transition: 0.1s all;
+  cursor: pointer;
+}
+
+.logo {
+  width: 75%;
+}
+@media screen and (min-width: 578px) {
+  .nav-card {
+    margin: 1.5rem;
+    width: calc(100% - 3rem);
+    height: fit-content;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+  .nav-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .logo {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .nav-card {
+    width: 75px;
+    height: calc(100vh - 3rem);
+    flex-direction: column;
+  }
+  .avatar {
+    border: white 2px solid;
+  }
+}
+
+.active {
+  fill: #ffffff;
+}
+.nav-icon:hover {
+  fill: #ffffff;
+}

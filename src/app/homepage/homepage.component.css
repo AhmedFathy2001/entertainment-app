@@ -1,0 +1,13 @@
+.custom-width {
+  width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .custom-width {
+    width: fit-content;
+  }
+  .homepage {
+    width: 100%;
+    margin: 0;
+  }
+}

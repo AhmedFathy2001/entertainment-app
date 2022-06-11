@@ -1,0 +1,10 @@
+@media screen and (max-width: 991.5px) {
+    .mx-xs-4{
+        margin: 0 24px;
+    }
+}
+@media screen and (max-width: 576.5px) {
+    .mx-xs-4{
+        margin: 0 16px;
+    }
+}

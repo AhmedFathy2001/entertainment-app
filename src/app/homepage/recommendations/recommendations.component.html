@@ -1,0 +1,7 @@
+<h2 class="mb-4 heading_L">Recommended for you</h2>
+<div class="row w-100 m-0">
+    <div class="col-sm-6 col-lg-4 col-xl-3 mb-3" *ngFor="let recommendation of recommendations">
+        <app-show-template [show]="recommendation">
+        </app-show-template>
+    </div>
+</div>

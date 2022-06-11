@@ -1,0 +1,27 @@
+.verify-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 10px;
+}
+.verify-email {
+    width: fit-content;
+    padding: 50px;
+  text-align: center;
+  background-color: #161d2f;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+a{
+    color: #fc4747;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}

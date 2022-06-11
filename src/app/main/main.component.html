@@ -1,0 +1,11 @@
+<app-verify-email-bar class="w-100" *ngIf="!isEmailVerified"></app-verify-email-bar>
+<div class="d-lg-flex">
+
+    <app-navbar class="custom-width"></app-navbar>
+    <div class="mx-xs-4 w-100">
+        <app-search-bar class="px-3"></app-search-bar>
+        <div [@routeAnimations]="prepareRoute(outlet)">
+            <router-outlet #outlet="outlet"></router-outlet>
+        </div>
+    </div>
+</div>
